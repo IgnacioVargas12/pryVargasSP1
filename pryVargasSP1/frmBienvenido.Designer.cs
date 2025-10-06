@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBienvenido));
             lblBienvenido = new Label();
             btnAceptar = new Button();
             SuspendLayout();
@@ -62,6 +63,7 @@
             Controls.Add(btnAceptar);
             Controls.Add(lblBienvenido);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmBienvenido";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Bienvenido";
